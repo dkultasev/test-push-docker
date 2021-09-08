@@ -15,5 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hello-world:$(date +%s)
-      run: push ghcr.io/dkultasev/hello-world:latest
+      run: |
+        docker build . --file Dockerfile --tag hello-world:$(date +%s)
+        push ghcr.io/dkultasev/hello-world:latest
