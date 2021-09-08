@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag hello-world:$(date +%s)
-        push ghcr.io/dkultasev/hello-world:latest
+        docker push ghcr.io/dkultasev/hello-world:latest
