@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: somename
+  IMAGE_NAME: dkultasev/somename
 
 jobs:
   build-and-push-image:
